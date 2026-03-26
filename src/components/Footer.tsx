@@ -1,0 +1,1 @@
+const Footer = () => ( <footer className="py-10 border-t border-border text-center"> <p className="text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground"> Swastik Nandakumar </p> <p className="text-[11px] text-muted-foreground/60 mt-1"> Business Growth Strategist & Strategic Acquirer for Service-Based Founders </p> </footer> ); export default Footer;
