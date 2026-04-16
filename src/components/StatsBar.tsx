@@ -9,7 +9,6 @@ const stats = [
   { num: "3", label: "Referrals to Get In Free" },
 ];
 
-// duplicate items for seamless loop
 const marqueeStats = [...stats, ...stats];
 
 const StatsBar = () => {
@@ -18,8 +17,8 @@ const StatsBar = () => {
       className="relative overflow-hidden border-y border-border py-6"
       style={{ background: "hsl(240 8% 6%)" }}
     >
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[hsl(240_8%_6%)] to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[hsl(240_8%_6%)] to-transparent z-10" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[hsl(240_8%_6%)] to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[hsl(240_8%_6%)] to-transparent" />
 
       <motion.div
         className="flex w-max items-center gap-10"

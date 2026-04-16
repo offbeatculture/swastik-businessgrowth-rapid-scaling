@@ -3,128 +3,131 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Sign Up",
-    desc: "Register with your details. You'll get a unique referral link instantly.",
+    title: "Register Free",
+    desc: "Sign up with your details. Your seat is confirmed instantly. No payment. Ever.",
     color: "#f97316",
   },
   {
     num: "02",
-    title: "Refer 3 Entrepreneurs",
-    desc: "Share your link with business owners and founders you know. 3 sign up through your link.",
+    title: "Get Your Referral Link",
+    desc: "The moment you register, you get a unique referral link. Start referring right away — no need to wait.",
     color: "#f7b500",
+    badge: "⚡ INSTANTLY UNLOCKED",
   },
   {
     num: "03",
-    title: "You're In. Free.",
-    desc: "3 referrals confirmed = your seat is locked. Show up April 7. No payment. Ever.",
-    color: "#22c55e",
+    title: "Refer 3 Business Owners",
+    desc: "Share your link with entrepreneurs and founders you know. 3 register through your link — your audit is confirmed.",
+    color: "#34d399",
+  },
+  {
+    num: "04",
+    title: "Get Your ₹50,000 Audit Free",
+    desc: "Swastik's team does a complete Business Audit for your company — detailed report, specific action items, ready to act on.",
+    color: "#a78bfa",
   },
 ];
 
+const auditPoints = [
+  "A complete Business Audit done by Swastik's team",
+  "A detailed report covering every gap in your business",
+  "Specific action items to fix what's broken and scale what's working",
+  "Worth ₹50,000 — yours free, just for referring 3 founders",
+];
+
 const HowItWorks = () => (
-  <section className="bg-[#050816] py-20 sm:py-24 md:py-28">
+  <section className="bg-black py-20 sm:py-24 md:py-28">
     <div className="mx-auto max-w-[1180px] px-4 sm:px-6">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center"
+        className="max-w-[980px]"
       >
-        <div className="mb-8 flex items-center justify-center gap-4">
-          <div className="h-[2px] w-10 bg-[#f7b500]" />
-          <span className="text-[12px] sm:text-[13px] font-extrabold uppercase tracking-[0.35em] text-[#f7b500]">
-            HOW YOU GET IN
+        <div className="mb-8 flex items-center gap-4">
+          <div className="h-[2px] w-8 bg-[#f08a1a]" />
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.28em] text-[#f08a1a] sm:text-[12px]">
+            HOW IT WORKS
           </span>
         </div>
 
-       <h2 className="mx-auto max-w-[980px] text-[26px] sm:text-[42px] md:text-[56px] lg:text-[72px] font-black leading-[1.05] sm:leading-[0.95] tracking-[-0.03em] text-white">
-  <span className="block">This Bootcamp Is Free.</span>
-  <span className="mt-2 block bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#f7b500] bg-clip-text text-transparent">
-    But You Have to Earn Your
-  </span>
-  <span className="block bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#f7b500] bg-clip-text text-transparent">
-    Seat.
-  </span>
-</h2>
+        <h2 className="max-w-[900px] text-left text-[34px] font-black leading-[1.05] tracking-[-0.03em] text-white sm:text-[52px] md:text-[64px]">
+          <span className="block">This Bootcamp Is Free.</span>
+          <span className="block text-[#f08a1a]">
+            And You Can Unlock a ₹50,000 Audit Right
+          </span>
+          <span className="block text-[#f08a1a]">When You Sign Up.</span>
+        </h2>
 
-       <motion.p
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  className="mx-auto mt-10 max-w-[980px] text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] sm:leading-[1.8] text-[#9aa0ad]"
->
-  I&apos;m not giving this away to spectators. If you want in, prove you&apos;re a doer.
-  The price of admission?{" "}
-  <strong className="font-semibold text-white">
-    Refer 3 entrepreneurs or business owners.
-  </strong>{" "}
-  That&apos;s it.
-</motion.p>
+        <p className="mt-8 max-w-[760px] text-left text-[15px] leading-[1.65] text-[#a1a1aa] sm:text-[17px] sm:leading-[1.75]">
+          Register for free. The moment you sign up, you get a unique referral
+          link. Share it with 3 business owners — and Swastik&apos;s team will
+          do a complete ₹50,000 Business Audit for your company. You don&apos;t
+          have to wait. You can start referring immediately after signing up.
+        </p>
       </motion.div>
 
-      {/* cards */}
-      <div className="mx-auto mt-16 grid grid-cols-3 gap-3 sm:max-w-[920px] sm:gap-5">
+      <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
         {steps.map((s, i) => (
           <motion.div
             key={s.num}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 26 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.12 }}
-            className="border border-[#1c2232] bg-[#0a0f1b] px-3 py-8 text-center sm:px-8 sm:py-12"
+            transition={{ delay: i * 0.08 }}
+            className="min-h-[220px] rounded-[4px] border border-white/10 bg-black px-4 py-7 sm:px-5"
             style={{ borderTop: `3px solid ${s.color}` }}
           >
             <div
-              className="mb-6 text-[34px] font-black leading-none sm:mb-8 sm:text-[44px]"
+              className="text-[30px] font-black leading-none sm:text-[42px]"
               style={{ color: s.color }}
             >
               {s.num}
             </div>
 
-            <h3 className="mb-4 text-[16px] font-extrabold leading-[1.25] text-white sm:mb-5 sm:text-[20px]">
+            {s.badge && (
+              <div className="mt-3 inline-flex items-center rounded-[4px] bg-[#17351f] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[#4ade80]">
+                {s.badge}
+              </div>
+            )}
+
+            <h3 className="mt-4 text-[18px] font-extrabold leading-[1.3] text-white">
               {s.title}
             </h3>
 
-            <p className="mx-auto max-w-[120px] text-[14px] leading-[1.5] text-[#8b8f9f] sm:max-w-[250px] sm:text-[16px] sm:leading-[1.6]">
+            <p className="mt-2 text-[15px] leading-[1.65] text-[#a1a1aa]">
               {s.desc}
             </p>
           </motion.div>
         ))}
       </div>
 
-      {/* quote block */}
-     <motion.div
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  className="mx-auto mt-16 max-w-[760px]"
->
-  {/* QUOTE BOX */}
-  <div className="relative overflow-hidden border border-[#1c2232] bg-[linear-gradient(180deg,#0d111c_0%,#0a0f1b_100%)]">
-    
-    {/* LEFT BAR */}
-    <div className="absolute left-0 top-0 h-full w-[4px] bg-[#f7b500]" />
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-10 rounded-[14px] border border-[#f08a1a] bg-[#191000] px-6 py-9 sm:px-8"
+      >
+        <h3 className="text-[28px] font-black leading-[1.15] tracking-[-0.02em] text-[#f08a1a] sm:text-[36px]">
+          Refer 3 Business Owners. Get a Free Business Audit Worth ₹50,000.
+        </h3>
 
-    {/* QUOTE ICON */}
-    <div className="absolute right-10 top-4 text-[90px] font-black leading-none text-[#5a2411]/30">
-      ”
-    </div>
+        <p className="mt-4 max-w-[920px] text-[15px] leading-[1.7] text-white/90 sm:text-[16px]">
+          You get your referral link the moment you sign up. No waiting. Refer 3
+          business owners who register — and here&apos;s what you unlock:
+        </p>
 
-    {/* TEXT */}
-   <div className="px-10 py-12 text-center">
-  <p className="mx-auto max-w-[600px] text-[14px] sm:text-[18px] md:text-[24px] font-semibold italic leading-[1.55] sm:leading-[1.65] md:leading-[1.7] text-white">
-  “If you can&apos;t get 3 business owners to sign up for something that&apos;s free — that tells me everything I need to know about your network and your ability to execute.”
-</p>
-</div>
-  </div>
-
-  {/* BELOW TEXT */}
-  <p className="mx-auto mt-12 max-w-[620px] text-center text-[13px] sm:text-[15px] md:text-[17px] leading-[1.75] sm:leading-[1.85] md:leading-[1.9] text-[#8f8f9e]">
-  This isn&apos;t a filter to be difficult. It&apos;s a filter to be effective.
-  The best rooms are built by the people in them. If you&apos;re a doer,
-  this takes you 10 minutes. If it feels hard — that&apos;s a data point too.
-</p>
-</motion.div>
+        <div className="mt-7 grid grid-cols-1 gap-x-10 gap-y-4 md:grid-cols-2">
+          {auditPoints.map((point) => (
+            <div key={point} className="flex items-start gap-3">
+              <span className="mt-[2px] text-[18px] font-bold text-[#22c55e]">
+                ✓
+              </span>
+              <p className="text-[15px] leading-[1.65] text-white">{point}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   </section>
 );

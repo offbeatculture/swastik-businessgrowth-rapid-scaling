@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const badges = [
-  { icon: "📅", label: "April 7, 8, 9", sub: "3 EVENINGS" },
-  { icon: "⏱️", label: "7 PM Onwards", sub: "3 HOURS / EVENING" },
-  { icon: "🔥", label: "FREE", sub: "REFER 3 TO UNLOCK" },
+  { label: "25 April & 26 April", sub: "2 FULL DAYS" },
+  { label: "Full Day", sub: "PER SESSION" },
+  { label: "FREE", sub: "REGISTER NOW" },
 ];
 
 const HeroSection = () => (
@@ -24,70 +24,66 @@ const HeroSection = () => (
     />
 
     <div className="section-container relative z-10 text-center">
-     <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.2 }}
-  className="mb-10 sm:mb-12 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-5 py-2.5"
->
-  <span className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
-  <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary">
-    Refer 3 Entrepreneurs · Attend Free · No Replays
-  </span>
-</motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="mb-10 sm:mb-12 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-5 py-2.5"
+      >
+        <span className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
+        <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary">
+          FREE TO ATTEND · SIGN UP → REFER 3 → GET ₹50,000 AUDIT · NO REPLAYS
+        </span>
+      </motion.div>
 
-<motion.h1
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3, duration: 0.6 }}
-  className="mb-8 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl md:text-[5.5rem]"
->
-  Stop Working Harder,
-  <br />
-  <span className="text-gradient-orange">On The Wrong Thing.</span>
-</motion.h1>
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="mb-8 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl md:text-[5.5rem]"
+      >
+        Stop Working Harder,
+        <br />
+        <span className="text-gradient-orange">On The Wrong Thing.</span>
+      </motion.h1>
 
-     <motion.p
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5 }}
-  className="mx-auto mb-8 max-w-[680px] px-2 text-center text-[14px] sm:text-[16px] md:text-[18px] leading-[1.7] sm:leading-[1.8] text-[#a1a1aa] sm:mb-10 sm:max-w-[720px]"
->
-  In 3 days, I&apos;ll show you the exact bottleneck that&apos;s capping your
-  business at ₹30 Lakh, ₹1 Crore, or ₹5 Crore —{" "}
-  <span className="font-semibold text-[#ff9d2f]">and how to fix it.</span>{" "}
-  Refer 3 entrepreneurs.{" "}
-  <span className="font-extrabold tracking-[0.03em] text-[#ff9d2f]">
-    GET IN FREE.
-  </span>
-</motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="mx-auto mb-8 max-w-[720px] px-2 text-center sm:mb-10"
+      >
+        <p className="text-[14px] sm:text-[16px] md:text-[18px] leading-[1.7] sm:leading-[1.8] text-[#a1a1aa]">
+          In 2 days, I&apos;ll show you the exact bottleneck that&apos;s capping your
+          business at ₹30 Lakh, ₹1 Crore, or ₹5 Crore — and how to fix it.
+        </p>
 
-     <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.7 }}
-  className="mb-12 flex flex-col items-center gap-5"
->
-  {badges.map((b) => (
-    <div
-      key={b.label}
-      className="flex w-[260px] items-center gap-4 border border-[#1b2233] bg-[#0a0f1b] px-7 py-5"
-    >
-      {/* ICON */}
-      <span className="text-[20px]">{b.icon}</span>
+        <p className="mt-4 text-[14px] sm:text-[16px] md:text-[18px] font-semibold leading-[1.7] sm:leading-[1.8] text-[#ff6a1a]">
+          Register free. Refer 3 business owners right after signing up. Get a
+          ₹50,000 Business Audit done for you.
+        </p>
+      </motion.div>
 
-      {/* TEXT */}
-      <div className="text-left">
-        <div className="text-[15px] font-extrabold leading-[1.2] text-white">
-          {b.label}
-        </div>
-        <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-[#7d7f8b]">
-          {b.sub}
-        </div>
-      </div>
-    </div>
-  ))}
-</motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7 }}
+        className="mb-12 flex flex-wrap items-center justify-center gap-4"
+      >
+        {badges.map((b) => (
+          <div
+            key={b.label}
+            className="flex h-[78px] w-[230px] flex-col items-center justify-center rounded-[12px] border border-white/10 bg-[#121212] px-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
+          >
+            <div className="text-[18px] font-extrabold leading-none text-white sm:text-[20px]">
+              {b.label}
+            </div>
+            <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-[#6f7480]">
+              {b.sub}
+            </div>
+          </div>
+        ))}
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -99,11 +95,12 @@ const HeroSection = () => (
           href="https://forms.queueform.com/311?referrer=412891aa-7335-4ae8-acec-5fc7c9ed8ced"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-cta px-10 py-5 text-sm font-black uppercase tracking-[0.1em] sm:text-base"
+          className="inline-flex min-h-[60px] min-w-[308px] items-center justify-center rounded-[4px] bg-[#df7a1c] px-10 py-5 text-sm font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:opacity-90 sm:text-[15px]"
         >
-          Start Referring &amp; Earn Your Spot
+          Register Free Now
         </a>
-        <p className="text-xs text-muted-foreground">
+
+        <p className="text-[13px] text-[#6f7480]">
           Limited seats. No replays. Doers only.
         </p>
       </motion.div>

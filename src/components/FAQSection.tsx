@@ -2,44 +2,48 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    q: "Is this really free?",
-    a: "Yes — if you refer 3 entrepreneurs or business owners. No payment, no credit card, no hidden upsell. Your referrals are your ticket. The content stands on its own. If you want to work with Swastik after, that conversation happens separately.",
+    q: "Is this really free to attend?",
+    a: "Yes. Register, show up, do the work. No referrals needed to get in. No payment. No credit card. The bootcamp is completely free.",
   },
   {
-    q: "Why do I need to refer 3 people?",
-    a: "Two reasons. First, if you can't get 3 business owners to register for something that's free, that's a signal about your network and execution speed — both of which matter for scaling. Second, the best rooms are built by the people in them. When everyone earns their way in, the quality of the room goes up. No passengers.",
+    q: "When do I get my referral link?",
+    a: "The moment you sign up. You don't have to wait until after the bootcamp — your referral link is available instantly after registration. You can start referring right away and get your audit confirmed before the event even begins.",
+  },
+  {
+    q: "What's the ₹50,000 Business Audit about?",
+    a: "Refer 3 business owners who register through your link — and Swastik's team will do a complete Business Audit for your company. You get a detailed report with specific action items to fix what's broken and scale what's working. This is what founders pay ₹50,000 for. Yours free for referring 3.",
   },
   {
     q: "Who counts as a valid referral?",
-    a: "Entrepreneurs and business owners. Anyone who runs a business — at any stage, any size. They need to register using your unique referral link. Once 3 people sign up through your link, your seat is confirmed.",
+    a: "Entrepreneurs and business owners at any stage, any size. They need to register using your unique referral link. Once 3 register through your link, your audit is confirmed.",
+  },
+  {
+    q: "Why should I refer people?",
+    a: "Because the ₹50,000 audit is the real unlock. The bootcamp gives you the framework. The audit gives you Swastik's team doing the diagnostic work for your specific business. If you know 3 founders who need this — and you do — it costs you nothing and gains you everything.",
   },
 ];
 
 const FAQSection = () => (
-  <section className="bg-[#050816] py-20 sm:py-32 px-5 md:px-6">
-    <div className="mx-auto w-full max-w-[900px]">
-
-      {/* Header */}
+  <section className="bg-black px-5 py-16 sm:px-6 sm:py-20 md:px-10 md:py-28">
+    <div className="mx-auto max-w-[1280px]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-12 sm:mb-16 text-center md:text-left"
+        className="mb-8 sm:mb-12"
       >
-        {/* Label */}
-        <div className="mb-5 flex items-center justify-start gap-3">
-  <span className="h-[1px] w-8 bg-[#12cfff]" />
-  <span className="text-[10px] sm:text-[11px] font-extrabold tracking-[0.3em] sm:tracking-[0.35em] uppercase text-[#12cfff]">
-    COMMON QUESTIONS
-  </span>
-</div>
+        <div className="mb-5 flex items-center gap-3 sm:mb-6">
+          <span className="h-[2px] w-6 bg-[#f08a1a] sm:w-8" />
+          <span className="text-[10px] font-extrabold uppercase tracking-[0.28em] text-[#f08a1a] sm:text-[11px] sm:tracking-[0.32em]">
+            COMMON QUESTIONS
+          </span>
+        </div>
 
-<h2 className="text-left text-[28px] sm:text-[42px] md:text-[52px] font-black tracking-[-0.02em] text-white">
-  Before You Decide.
-</h2>
+        <h2 className="text-[28px] font-black leading-[1.08] tracking-[-0.035em] text-white sm:text-[42px] md:text-[64px]">
+          Before You Decide.
+        </h2>
       </motion.div>
 
-      {/* FAQ List */}
       <div>
         {faqs.map((f, i) => (
           <motion.div
@@ -48,21 +52,18 @@ const FAQSection = () => (
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="border-b border-[#1a1d2a] py-6 sm:py-8"
+            className="border-b border-[#1a1d22] py-5 sm:py-8"
           >
-            {/* Question */}
-            <h3 className="mb-2 text-[14px] sm:text-[16px] md:text-[17px] font-semibold text-white">
+            <h3 className="mb-2 text-[17px] font-extrabold leading-[1.4] text-white sm:mb-3 sm:text-[20px] md:text-[22px]">
               {f.q}
             </h3>
 
-            {/* Answer */}
-            <p className="text-[13px] sm:text-[15px] md:text-[16px] leading-[1.6] sm:leading-[1.7] text-[#9aa0ad]">
+            <p className="max-w-[1180px] text-[15px] leading-[1.75] text-[#9ea3ad] sm:text-[17px] sm:leading-[1.85] md:text-[18px]">
               {f.a}
             </p>
           </motion.div>
         ))}
       </div>
-
     </div>
   </section>
 );

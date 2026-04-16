@@ -1,13 +1,13 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
-import StatsBar from "@/components/StatsBar";
+// import StatsBar from "@/components/StatsBar";
 import ProblemSection from "@/components/ProblemSection";
 import PillarsSection from "@/components/PillarsSection";
 import WhoIsThisFor from "@/components/WhoIsThisFor";
 import ThreeDayBreakdown from "@/components/ThreeDayBreakdown";
 import WhatYouGet from "@/components/WhatYouGet";
-import CoachSection from "@/components/CoachSection";
+// import CoachSection from "@/components/CoachSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -18,13 +18,13 @@ const Index = () => (
     <AnnouncementBar />
     <HeroSection />
     <HowItWorks />
-    <StatsBar />
+    {/* <StatsBar /> */}
     <ProblemSection />
     <PillarsSection />
     <WhoIsThisFor />
     <ThreeDayBreakdown />
     <WhatYouGet />
-    <CoachSection />
+    {/* <CoachSection /> */}
     <FAQSection />
     <FinalCTA />
     <Footer />
