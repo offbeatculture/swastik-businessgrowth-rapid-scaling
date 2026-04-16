@@ -7,7 +7,7 @@ const MobileStickyBar = () => (
   rel="noopener noreferrer"
   className="btn-cta w-full text-center text-sm py-3"
 >
-  EARN YOUR SPOT — FREE →
+  Register for FREE →
 </a>
   </div>
 );
