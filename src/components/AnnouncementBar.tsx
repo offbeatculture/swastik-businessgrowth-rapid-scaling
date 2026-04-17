@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
-const CTA_LINK =
-  "https://forms.queueform.com/311?referrer=412891aa-7335-4ae8-acec-5fc7c9ed8ced";
+const CTA_LINK ="https://app.queueform.com/share/form/332";
+  // "https://forms.queueform.com/311?referrer=412891aa-7335-4ae8-acec-5fc7c9ed8ced";
+  
 
 const AnnouncementBar = () => (
   <header className="w-full bg-[#050816]">

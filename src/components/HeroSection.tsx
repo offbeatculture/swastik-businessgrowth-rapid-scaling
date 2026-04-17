@@ -92,7 +92,7 @@ const HeroSection = () => (
         className="flex flex-col items-center gap-4"
       >
         <a
-          href="https://forms.queueform.com/311?referrer=412891aa-7335-4ae8-acec-5fc7c9ed8ced"
+          href="https://app.queueform.com/share/form/332"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex min-h-[60px] min-w-[308px] items-center justify-center rounded-[4px] bg-[#df7a1c] px-10 py-5 text-sm font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:opacity-90 sm:text-[15px]"
