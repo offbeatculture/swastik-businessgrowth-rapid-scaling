@@ -5,7 +5,7 @@ const days = [
     eyebrow: "DAY 1 — PILLARS 1–3",
     title: "Why Your Business Is Stuck",
     date: "01 May",
-    duration: "Full Day",
+    // duration: "Full Day",
     intro:
       'Day 1 opens with why effort alone doesn’t fix structural problems. You’ll learn the 8-pillar model, all 7 stages of scale, and the "Fix Your Floor" principle. Then we go deep on the 3 revenue pillars:',
     items: [
@@ -33,7 +33,7 @@ const days = [
     eyebrow: "DAY 2 — PILLARS 4–8 + YOUR 90-DAY SPRINT",
     title: "Build The Machine",
     date: "02 May",
-    duration: "Full Day",
+    // duration: "Full Day",
     intro:
       "Day 2 builds the back-end and closes with your sprint — because scaling revenue without infrastructure is how businesses implode. Then: The 3 Deadliest Stage Transitions. Archetype Playbooks. Money Math (calculators open). Live Hot Seats. Your 90-Day Sprint Plan.",
     items: [
@@ -74,7 +74,7 @@ const DayCard = ({
   eyebrow,
   title,
   date,
-  duration,
+  // duration,
   intro,
   items,
   note,
@@ -93,7 +93,7 @@ const DayCard = ({
       <div className="text-[18px] font-extrabold text-white sm:text-[22px]">
         {date}
       </div>
-      <div className="text-[18px] text-[#98a0ab] sm:text-[22px]">{duration}</div>
+      <div className="text-[18px] text-[#98a0ab] sm:text-[22px]">{}</div>
     </div>
 
     <div className="mt-7 border-t border-[#1c1f24] pt-7">

@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const badges = [
-  { label: "01 May & 02 May", sub: "2 FULL DAYS" },
-  { label: "Full Day", sub: "PER SESSION" },
+  { label: "01 May  &  02 May", sub: "" },
+  // { label: "Full Day", sub: "PER SESSION" },
   { label: "FREE", sub: "REGISTER NOW" },
 ];
 
