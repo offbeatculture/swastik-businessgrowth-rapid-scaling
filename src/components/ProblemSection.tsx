@@ -106,8 +106,7 @@ const ProblemSection = () => (
         Every business — whether it&apos;s doing ₹3 lakh/month or ₹3 crore/year —
         runs on the same{" "}
         <span className="font-bold text-white">8 pillars.</span> When one
-        breaks, growth stalls. This bootcamp tears open all 8 across 2 full
-        days.
+        breaks, growth stalls. This bootcamp tears open all 8 across.
       </motion.p>
     </div>
   </section>
