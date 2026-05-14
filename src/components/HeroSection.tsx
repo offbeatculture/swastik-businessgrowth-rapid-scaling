@@ -160,36 +160,36 @@ const HeroSection = () => {
   transition={{ delay: 0.75 }}
   className="mx-auto mb-10 max-w-[720px]"
 >
- <div className="rounded-[24px] border border-[#ff6a1a]/55 bg-[#0f0f0f] p-4 shadow-[0_0_34px_rgba(255,106,26,0.12)] sm:p-5">
-    <div className="grid gap-3.5">
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        value={formData.name}
-        onChange={handleChange}
-        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
-      />
+ <div className="rounded-[28px] border border-[#1f1f1f] bg-[#100b07] p-6 shadow-[0_22px_70px_rgba(237,125,18,0.08)] sm:p-7 md:p-8">
+  <div className="grid gap-5">
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      value={formData.name}
+      onChange={handleChange}
+      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
+    />
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        value={formData.email}
-        onChange={handleChange}
-        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
-      />
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      value={formData.email}
+      onChange={handleChange}
+      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
+    />
 
-      <input
-        type="tel"
-        name="phone"
-        placeholder="Your Whatsapp Number"
-        value={formData.phone}
-        onChange={handleChange}
-        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
-      />
-    </div>
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Your Whatsapp Number"
+      value={formData.phone}
+      onChange={handleChange}
+      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
+    />
   </div>
+</div>
 </motion.div>
 
         <motion.div
