@@ -56,7 +56,7 @@ const HeroSection = () => {
         throw new Error("Failed to submit");
       }
 
-      navigate("/thank-you");
+      navigate("/ty");
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong");
