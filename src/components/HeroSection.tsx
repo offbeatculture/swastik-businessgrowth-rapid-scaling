@@ -3,9 +3,11 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const badges = [
-  { label: "01 May  &  02 May", sub: "" },
-  // { label: "Full Day", sub: "PER SESSION" },
-  { label: "FREE", sub: "REGISTER NOW" },
+  {
+    label: "26, 27 & 28 May",
+    sub: "LIVE AT 7:00 PM",
+    subClassName: "text-white/90",
+  },
 ];
 
 const HeroSection = () => {
@@ -35,17 +37,20 @@ const HeroSection = () => {
     try {
       setLoading(true);
 
-      const response = await fetch("https://offbeatn8n.coachswastik.com/webhook/swastik-rsb", {//webhook to add
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-        }),
-      });
+      const response = await fetch(
+        "https://offbeatn8n.coachswastik.com/webhook/swastik-rsb",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit");
@@ -61,8 +66,7 @@ const HeroSection = () => {
   };
 
   return (
-    // <section className="relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-20">
-      <section
+    <section
       id="register"
       className="relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-20"
     >
@@ -73,6 +77,7 @@ const HeroSection = () => {
             "radial-gradient(ellipse at top center, hsl(18 100% 40% / 0.25), transparent 70%)",
         }}
       />
+
       <div
         className="absolute top-20 right-0 h-[400px] w-[400px] rounded-full opacity-10 blur-[100px]"
         style={{
@@ -86,7 +91,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mb-10 sm:mb-12 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-5 py-2.5"
+          className="mb-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-5 py-2.5 sm:mb-12"
         >
           <span className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
           <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary">
@@ -111,12 +116,13 @@ const HeroSection = () => {
           transition={{ delay: 0.5 }}
           className="mx-auto mb-8 max-w-[720px] px-2 text-center sm:mb-10"
         >
-          <p className="text-[14px] sm:text-[16px] md:text-[18px] leading-[1.7] sm:leading-[1.8] text-[#a1a1aa]">
-            In 2 days, I&apos;ll show you the exact bottleneck that&apos;s capping your
-            business at ₹30 Lakh, ₹1 Crore, or ₹5 Crore — and how to fix it.
+          <p className="text-[14px] leading-[1.7] text-[#a1a1aa] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">
+            In 3 days, I&apos;ll show you the exact bottleneck that&apos;s
+            capping your business at ₹30 Lakh, ₹1 Crore, or ₹5 Crore — and how
+            to fix it.
           </p>
 
-          <p className="mt-4 text-[14px] sm:text-[16px] md:text-[18px] font-semibold leading-[1.7] sm:leading-[1.8] text-[#ff6a1a]">
+          <p className="mt-4 text-[14px] font-semibold leading-[1.7] text-[#ff6a1a] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">
             Register free. Refer 3 business owners right after signing up. Get a
             ₹50,000 Business Audit done for you.
           </p>
@@ -126,7 +132,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="mb-12 flex flex-wrap items-center justify-center gap-4"
+          className="mb-10 flex flex-wrap items-center justify-center gap-4"
         >
           {badges.map((b) => (
             <div
@@ -136,48 +142,55 @@ const HeroSection = () => {
               <div className="text-[18px] font-extrabold leading-none text-white sm:text-[20px]">
                 {b.label}
               </div>
-              <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-[#6f7480]">
+
+              <div
+                className={`mt-2 text-[11px] uppercase tracking-[0.22em] ${
+                  b.subClassName || "text-[#6f7480]"
+                }`}
+              >
                 {b.sub}
               </div>
             </div>
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.75 }}
-          className="mx-auto mb-10 max-w-[720px]"
-        >
-          <div className="rounded-[18px] border border-white/10 bg-[#121212]/90 p-4 sm:p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]">
-            <div className="grid gap-3">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                className="h-[54px] w-full rounded-[10px] border border-white/10 bg-[#0f0f0f] px-4 text-white outline-none placeholder:text-[#6f7480]"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="h-[54px] w-full rounded-[10px] border border-white/10 bg-[#0f0f0f] px-4 text-white outline-none placeholder:text-[#6f7480]"
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Your Phone Number"
-                value={formData.phone}
-                onChange={handleChange}
-                className="h-[54px] w-full rounded-[10px] border border-white/10 bg-[#0f0f0f] px-4 text-white outline-none placeholder:text-[#6f7480]"
-              />
-            </div>
-          </div>
-        </motion.div>
+       <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.75 }}
+  className="mx-auto mb-10 max-w-[720px]"
+>
+ <div className="rounded-[24px] border border-[#ff6a1a]/55 bg-[#0f0f0f] p-4 shadow-[0_0_34px_rgba(255,106,26,0.12)] sm:p-5">
+    <div className="grid gap-3.5">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        value={formData.name}
+        onChange={handleChange}
+        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        value={formData.email}
+        onChange={handleChange}
+        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
+      />
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Your Whatsapp Number"
+        value={formData.phone}
+        onChange={handleChange}
+        className="h-[58px] w-full rounded-[14px] border border-white/10 bg-[#090909] px-5 text-[15px] text-white outline-none transition placeholder:text-[#697184] focus:border-[#ff6a1a]/60"
+      />
+    </div>
+  </div>
+</motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
