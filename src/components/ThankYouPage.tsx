@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const ThankYouPage = () => {
-  const whatsappLink = "https://chat.whatsapp.com/Gm9vYHcDNP56spPbRkTJbH";
-  const referralFormLink = "https://app.queueform.com/share/form/359";
+  const whatsappLink = "https://Ip.swastiknandakumar.com/rsb-wap";
+  const referralFormLink = "https://lp.swastiknandakumar.com/rsb-referral50k-boonus";
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#050505] px-4 py-14 sm:px-6 sm:py-20">
