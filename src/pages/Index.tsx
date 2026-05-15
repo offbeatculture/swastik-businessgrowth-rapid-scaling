@@ -17,7 +17,7 @@ const Index = () => (
   <div className="min-h-screen bg-background text-foreground">
     <AnnouncementBar />
     <HeroSection />
-    <HowItWorks />
+    
     {/* <StatsBar /> */}
     <ProblemSection />
     <PillarsSection />
@@ -26,6 +26,7 @@ const Index = () => (
     <WhatYouGet />
     {/* <CoachSection /> */}
     <FAQSection />
+    <HowItWorks />
     <FinalCTA />
     <Footer />
     <div className="pb-16 md:pb-0" />
