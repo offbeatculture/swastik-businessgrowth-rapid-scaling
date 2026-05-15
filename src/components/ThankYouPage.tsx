@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const ThankYouPage = () => {
-  const whatsappLink = "https://chat.whatsapp.com/D5E99h0rtxVK2RePIZbCRY";
+  const whatsappLink = "https://lp.swastiknandakumar.com/rsb-wap";
   const referralFormLink = "https://lp.swastiknandakumar.com/rsb-referral50k-boonus";
 
   return (
