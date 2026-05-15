@@ -23,6 +23,13 @@ const faqs = [
   },
 ];
 
+const auditPoints = [
+  "A clear diagnosis of the biggest bottleneck stopping your business growth",
+  "Specific action items to fix what is broken and scale what is already working",
+  "A detailed business audit report from Swastik’s team",
+  "Clarity on what to focus on next so you stop wasting effort in the wrong places",
+];
+
 const FAQSection = () => (
   <section className="bg-black px-5 py-16 sm:px-6 sm:py-20 md:px-10 md:py-28">
     <div className="mx-auto max-w-[1280px]">
@@ -64,6 +71,33 @@ const FAQSection = () => (
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-12 rounded-[18px] border border-[#f08a1a]/70 bg-[#191000] px-6 py-9 shadow-[0_22px_70px_rgba(240,138,26,0.12)] sm:px-8 md:mt-16"
+      >
+        <h3 className="text-[28px] font-black leading-[1.15] tracking-[-0.02em] text-[#f08a1a] sm:text-[36px]">
+          Refer 3 Business Owners. Get a Free Business Audit Worth ₹50,000.
+        </h3>
+
+        <p className="mt-4 max-w-[920px] text-[15px] leading-[1.7] text-white/90 sm:text-[16px]">
+          You get your referral link the moment you sign up. No waiting. Refer 3
+          business owners who register — and here's what you unlock:
+        </p>
+
+        <div className="mt-7 grid grid-cols-1 gap-x-10 gap-y-4 md:grid-cols-2">
+          {auditPoints.map((point) => (
+            <div key={point} className="flex items-start gap-3">
+              <span className="mt-[2px] text-[18px] font-bold text-[#22c55e]">
+                ✓
+              </span>
+              <p className="text-[15px] leading-[1.65] text-white">{point}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   </section>
 );

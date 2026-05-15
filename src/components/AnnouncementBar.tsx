@@ -12,7 +12,8 @@ const AnnouncementBar = () => (
       <div className="relative z-10">
         <p className="mx-auto max-w-[360px] px-4 text-[11px] font-extrabold uppercase leading-[1.5] tracking-[0.14em] text-white sm:max-w-none sm:text-[13px] sm:tracking-[0.18em]">
           {/* APRIL 7, 8, 9 • 7 PM ONWARDS • FREE WHEN YOU REFER 3 ENTREPRENEURS • DOERS ONLY */}
-           26,27,28 MAY • 7 PM DAILY • FREE TO ATTEND • REFER 3 AFTER SIGN UP → GET ₹50,000 BONUS • DOERS ONLY
+           26,27,28 MAY (Tue, Wed, Thu) • 7 PM DAILY 
+           {/* • FREE TO ATTEND • REFER 3 AFTER SIGN UP → GET ₹50,000 BONUS • DOERS ONLY */}
         </p>
       </div>
     </div>

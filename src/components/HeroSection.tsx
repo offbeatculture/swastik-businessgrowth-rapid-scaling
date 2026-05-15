@@ -68,7 +68,7 @@ const HeroSection = () => {
   return (
     <section
       id="register"
-      className="relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-20"
+     className="relative overflow-hidden pt-8 pb-16 sm:pt-10 sm:pb-20"
     >
       <div
         className="absolute top-0 left-0 right-0 h-[500px] opacity-30"
@@ -122,19 +122,19 @@ const HeroSection = () => {
             to fix it.
           </p>
 
-          <p className="mt-4 text-[14px] font-semibold leading-[1.7] text-[#ff6a1a] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">
+          {/* <p className="mt-4 text-[14px] font-semibold leading-[1.7] text-[#ff6a1a] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">
             Register free. Refer 3 business owners right after signing up. Get a
             ₹50,000 Business Audit done for you.
-          </p>
+          </p> */}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           className="mb-10 flex flex-wrap items-center justify-center gap-4"
-        >
-          {badges.map((b) => (
+        > */}
+          {/* {badges.map((b) => (
             <div
               key={b.label}
               className="flex h-[78px] w-[230px] flex-col items-center justify-center rounded-[12px] border border-white/10 bg-[#121212] px-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
@@ -152,64 +152,77 @@ const HeroSection = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
-       <motion.div
+    <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.75 }}
-  className="mx-auto mb-10 max-w-[720px]"
+  transition={{ delay: 0.7 }}
+  className="mx-auto max-w-[820px] rounded-[30px] border border-[#2f343a] bg-[#3a4048] px-5 py-10 text-center shadow-[0_24px_80px_rgba(0,0,0,0.35)] sm:px-8 md:px-10"
 >
- <div className="rounded-[28px] border border-[#1f1f1f] bg-[#100b07] p-6 shadow-[0_22px_70px_rgba(237,125,18,0.08)] sm:p-7 md:p-8">
-  <div className="grid gap-5">
-    <input
-      type="text"
-      name="name"
-      placeholder="Your Name"
-      value={formData.name}
-      onChange={handleChange}
-      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
-    />
+  {/* top orange text */}
+  <h3 className="mx-auto max-w-[760px] text-center text-[20px] font-black leading-[1.35] tracking-[-0.01em] text-[#ff6a1a] md:text-[22px]">
+  Register free. Refer 3 business owners right after signing up.
+  <br />
+  Get a ₹50,000 Business Audit done for you.
+</h3>
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Your Email"
-      value={formData.email}
-      onChange={handleChange}
-      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
-    />
+  {/* date box */}
+  <div className="mx-auto mt-10 flex h-[78px] w-fit min-w-[230px] flex-col items-center justify-center rounded-[12px] border-2 border-[#4d535c] bg-[#242424] px-8 text-center shadow-[0_0_0_1px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(255,255,255,0.06)]">
+  <div className="text-[22px] font-extrabold leading-none text-white">
+    26, 27 & 28 May
+  </div>
 
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Your Whatsapp Number"
-      value={formData.phone}
-      onChange={handleChange}
-      className="h-[72px] w-full rounded-2xl border border-[#2c2c2c] bg-[#060606] px-6 text-[19px] text-white outline-none transition placeholder:text-[#627399] focus:border-[#ed7d12]"
-    />
+  <div className="mt-3 text-[11px] font-bold uppercase tracking-[0.28em] text-white">
+    Live At 7:00 PM
   </div>
 </div>
+
+  {/* form inputs - no extra inner box */}
+  <div className="mx-auto mt-10 max-w-[640px] text-left">
+    <div className="grid gap-5">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        value={formData.name}
+        onChange={handleChange}
+        className="h-[68px] w-full rounded-2xl border border-[#4d535c] bg-[#111111] px-6 text-[18px] text-white outline-none transition placeholder:text-[#8b98b8] focus:border-[#ed7d12]"
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        value={formData.email}
+        onChange={handleChange}
+        className="h-[68px] w-full rounded-2xl border border-[#4d535c] bg-[#111111] px-6 text-[18px] text-white outline-none transition placeholder:text-[#8b98b8] focus:border-[#ed7d12]"
+      />
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Your Whatsapp Number"
+        value={formData.phone}
+        onChange={handleChange}
+        className="h-[68px] w-full rounded-2xl border border-[#4d535c] bg-[#111111] px-6 text-[18px] text-white outline-none transition placeholder:text-[#8b98b8] focus:border-[#ed7d12]"
+      />
+    </div>
+  </div>
+
+  {/* button */}
+  <button
+    onClick={handleSubmit}
+    disabled={loading}
+    className="mx-auto mt-10 inline-flex min-h-[60px] min-w-[308px] items-center justify-center rounded-[6px] bg-[#ed7d12] px-10 py-5 text-sm font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:bg-[#d96f0d] disabled:cursor-not-allowed disabled:opacity-70 sm:text-[15px]"
+  >
+    {loading ? "Submitting..." : "Register Free Now"}
+  </button>
+
+  <p className="mt-5 text-center text-[13px] text-[#b8beca]">
+    Limited seats. No replays. Doers only.
+  </p>
 </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.8 }}
-          className="flex flex-col items-center gap-4"
-        >
-          <button
-            onClick={handleSubmit}
-            disabled={loading}
-            className="inline-flex min-h-[60px] min-w-[308px] items-center justify-center rounded-[4px] bg-[#df7a1c] px-10 py-5 text-sm font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70 sm:text-[15px]"
-          >
-            {loading ? "Submitting..." : "Register Free Now"}
-          </button>
-
-          <p className="text-[13px] text-[#6f7480]">
-            Limited seats. No replays. Doers only.
-          </p>
-        </motion.div>
       </div>
     </section>
   );
