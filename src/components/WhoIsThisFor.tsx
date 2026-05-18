@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { CheckSquare } from "lucide-react";
 
 const items = [
-  "Entrepreneurs at any stage — solopreneurs, service founders, agency owners, product builders, coaches, consultants",
-  "Working hard but not seeing proportional growth in revenue, freedom, or both",
-  "Feeling like the business depends entirely on you — and you know that's a problem",
-  "A doer — someone who takes action, not someone who collects free content and does nothing",
-  "Want to move from self-employed to running a business that operates without you",
-  "Connected enough to refer 3 business owners — because strong networks are how real businesses grow",
+  "Owners stuck between ₹50L and ₹10Cr who feel like the business owns them, not the other way around.",
+  "Founders who've read the books, attended the workshops, hired the coaches — and still cannot name what's actually broken.",
+  "Coaches, consultants, agency owners, D2C founders, service businesses, retailers, B2B operators.",
+  'Operators who quietly know: "I\'m working harder than ever and the business isnt moving."',
+  "Doers — people who write on paper, score themselves honestly, and act on what they see.",
+  'Owners ready to be diagnosed, not motivated. The bootcamp is built to do the opposite of "you\'re doing great."',
 ];
 
 const WhoIsThisFor = () => (

@@ -3,33 +3,33 @@ import { motion } from "framer-motion";
 const benefits = [
   {
     num: "01",
-    title: "Your 8-Pillar Score",
+    title: "A One-Line Diagnosis",
     desc: "Every pillar scored. You’ll know which 1–2 to attack first and why.",
   },
   {
     num: "02",
-    title: "Your Stage & Archetype",
-    desc: "Your position on the 7-stage scale and the specific trap your type falls into.",
+    title: "A Force Scorecard",
+    desc: "Every force scored on paper. You'll know which one to attack first — and which to attack second — without guessing.",
   },
   {
     num: "03",
-    title: "Your 90-Day Sprint",
-    desc: "Month 1 Build. Month 2 Execute. Month 3 Optimize. One number every Monday.",
+    title: "A Rewritten Marketing Message",
+    desc: "Positioning, story, and distribution — aligned. Tested against the room. Ready to put in front of strangers the next morning",
   },
   {
     num: "04",
-    title: "Your Offer Rewrite",
-    desc: "A sharper, one-sentence offer tested against live feedback in the room.",
+    title: "A Rebuilt Offer",
+    desc: 'Re-engineered until saying "no" feels stupid. New price defended out loud. The "sales problem" exposed for what it actually was.',
   },
   {
     num: "05",
     title: "Your Money Math",
-    desc: "Effective hourly rate. Gross margin. CAC. The numbers you’ve been avoiding — confronted.",
+    desc: "Profit allocation system, the numbers to track every week, and a habit that makes profit unavoidable instead of optional.",
   },
   {
     num: "06",
-    title: "Your Onboarding System",
-    desc: "A 7-day client onboarding sequence with actual messages. Ready to deploy next week.",
+    title: "Your Constraint & Growth Plan",
+    desc: "One named constraint. A 3-lever growth plan in priority order. A map of operator vs. owner work — plus the focus system to actually execute it.",
   },
 ];
 
@@ -45,7 +45,7 @@ const WhatYouGet = () => (
         <div className="mb-6 flex items-center gap-3">
           <span className="h-[2px] w-8 bg-[#f08a1a]" />
           <p className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-[0.28em] sm:tracking-[0.32em] text-[#f08a1a]">
-            WHAT CHANGES AFTER 2 DAYS
+            WHAT CHANGES AFTER 3 DAYS
           </p>
         </div>
 
