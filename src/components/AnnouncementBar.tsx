@@ -42,9 +42,9 @@ const AnnouncementBar = () => (
                 •
               </span>
 
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#6f727d] sm:text-[12px] sm:tracking-[0.30em]">
+              {/* <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#6f727d] sm:text-[12px] sm:tracking-[0.30em]">
                 RAPID SCALING BOOTCAMP
-              </span>
+              </span> */}
 
               <span className="text-[11px] text-[#ff6a1a] sm:text-[12px]">
                 •
