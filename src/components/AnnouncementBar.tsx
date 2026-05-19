@@ -46,9 +46,9 @@ const AnnouncementBar = () => (
                 RAPID SCALING BOOTCAMP
               </span> */}
 
-              <span className="text-[11px] text-[#ff6a1a] sm:text-[12px]">
+              {/* <span className="text-[11px] text-[#ff6a1a] sm:text-[12px]">
                 •
-              </span>
+              </span> */}
             </div>
           ))}
         </div>
