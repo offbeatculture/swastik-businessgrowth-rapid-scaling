@@ -41,7 +41,7 @@ const FinalCTA = () => (
         </div>
 
         <p className="mt-6 text-[17px] leading-[1.7] text-[#9ea3ad]">
-          01 May &amp; 02 May · Free to Attend · No Replays · Doers Only
+         26 May • 27 May • 28 May · Free to Attend · No Replays · Doers Only
         </p>
 
         <div className="mx-auto mt-10 max-w-[720px] overflow-hidden bg-[#111214] text-left">

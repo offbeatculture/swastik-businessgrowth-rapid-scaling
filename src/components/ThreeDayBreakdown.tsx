@@ -252,44 +252,44 @@ const DayCard = ({
   leaveWith,
 }: DayCardProps) => {
   return (
-    <div className="w-full rounded-[20px] border border-[#24262d] bg-[#15161b] px-6 py-8 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] sm:px-8 sm:py-9 md:px-10">
+    <div className="w-full rounded-[14px] border border-[#24262d] bg-[#15161b] px-7 py-7 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:px-8 md:py-8">
       <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="mb-3 text-[10px] font-black uppercase tracking-[0.34em] text-[#ff6428]">
+          <p className="mb-3 text-[9px] font-black uppercase tracking-[0.32em] text-[#ff6428]">
             {eyebrow}
           </p>
 
-          <h3 className="max-w-[820px] text-[28px] font-black leading-[1.03] tracking-[-0.055em] text-white sm:text-[38px] md:text-[44px]">
+          <h3 className="max-w-[720px] text-[26px] font-black leading-[1.04] tracking-[-0.05em] text-white sm:text-[32px] md:text-[36px]">
             {title}
           </h3>
         </div>
 
-        <p className="shrink-0 pb-2 text-[13px] font-bold uppercase tracking-[0.06em] text-[#7f8592] sm:text-[15px]">
+        <p className="shrink-0 pb-1 text-[12px] font-bold uppercase tracking-[0.06em] text-[#7f8592] sm:text-[13px]">
           {date}
         </p>
       </div>
 
-      <div className="mt-6 border-t border-[#282a31] pt-7">
-        <p className="max-w-[980px] text-[15px] leading-[1.6] text-[#b9c1cf] sm:text-[17px]">
+      <div className="mt-5 border-t border-[#282a31] pt-6">
+        <p className="max-w-[860px] text-[14px] leading-[1.55] text-[#b9c1cf] sm:text-[15px]">
           {intro}
         </p>
 
-        <div className="mt-7">
+        <div className="mt-6">
           {items.map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[52px_1fr] gap-4 border-b border-[#292b31] py-6 last:border-b-0 sm:grid-cols-[62px_1fr]"
+              className="grid grid-cols-[42px_1fr] gap-4 border-b border-[#292b31] py-5 last:border-b-0 sm:grid-cols-[52px_1fr]"
             >
-              <div className="text-[26px] font-black leading-none tracking-[-0.04em] text-[#ff6428] sm:text-[30px]">
+              <div className="text-[24px] font-black leading-none tracking-[-0.04em] text-[#ff6428] sm:text-[26px]">
                 {item.num}
               </div>
 
               <div>
-                <h4 className="text-[18px] font-black leading-tight tracking-[-0.03em] text-white sm:text-[21px]">
+                <h4 className="text-[17px] font-black leading-tight tracking-[-0.03em] text-white sm:text-[19px]">
                   {item.title}
                 </h4>
 
-                <p className="mt-2 text-[14px] leading-[1.6] text-[#b9c1cf] sm:text-[15px]">
+                <p className="mt-2 text-[13px] leading-[1.55] text-[#b9c1cf] sm:text-[14px]">
                   {item.text}
                 </p>
               </div>
@@ -297,8 +297,8 @@ const DayCard = ({
           ))}
         </div>
 
-        <div className="mt-7 rounded-[11px] border border-[#a34520] bg-[#3a211b] px-6 py-5 sm:px-7">
-          <p className="text-[14px] font-semibold leading-[1.6] text-white sm:text-[15px]">
+        <div className="mt-6 rounded-[8px] border border-[#a34520] bg-[#3a211b] px-5 py-4 sm:px-6">
+          <p className="text-[13px] font-semibold leading-[1.55] text-white sm:text-[14px]">
             <span className="font-black uppercase text-[#ff6428]">
               YOU LEAVE WITH:
             </span>{" "}
@@ -312,31 +312,31 @@ const DayCard = ({
 
 const ThreeDayBreakdown = () => {
   return (
-    <section className="bg-[#050506] px-5 py-20 sm:px-8 sm:py-24">
-      <div className="mx-auto max-w-[1220px]">
+    <section className="bg-[#050506] px-5 py-16 sm:px-8 sm:py-20">
+      <div className="mx-auto max-w-[1080px]">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="mx-auto mb-14 max-w-[880px] text-center"
+          className="mx-auto mb-11 max-w-[720px] text-center"
         >
-          <p className="mb-5 text-[11px] font-black uppercase tracking-[0.38em] text-[#ff6428]">
+          <p className="mb-4 text-[9px] font-black uppercase tracking-[0.36em] text-[#ff6428]">
             3 NIGHTS, 9 HOURS, LIVE ONLY
           </p>
 
-          <h2 className="mx-auto max-w-[800px] text-[38px] font-black leading-[0.96] tracking-[-0.06em] text-white sm:text-[54px] md:text-[64px]">
+          <h2 className="mx-auto max-w-[680px] text-[34px] font-black leading-[0.98] tracking-[-0.055em] text-white sm:text-[46px] md:text-[52px]">
             What Happens — Night by Night.
           </h2>
 
-          <p className="mx-auto mt-7 max-w-[760px] text-[17px] leading-[1.55] text-[#b9c1cf] sm:text-[19px]">
+          <p className="mx-auto mt-6 max-w-[620px] text-[15px] leading-[1.5] text-[#b9c1cf] sm:text-[16px]">
             Live only. No replays, no recordings. The intensity of the room, the
             silent scoring, and the real-time pressure are the product — and
             they don't translate to a recording.
           </p>
         </motion.div>
 
-        <div className="mx-auto max-w-[1080px] space-y-7">
+        <div className="mx-auto max-w-[900px] space-y-6">
           {days.map((day, index) => (
             <motion.div
               key={index}

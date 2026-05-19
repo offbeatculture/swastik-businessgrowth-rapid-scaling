@@ -36,7 +36,9 @@ const WhoIsThisFor = () => (
   viewport={{ once: true }}
   className="text-muted-foreground max-w-3xl mb-12 text-[14px] sm:text-[15px] md:text-base leading-[1.65] sm:leading-relaxed"
 >
-  Whether you just started or you're running a ₹10 crore operation — the 8 pillars apply at every stage. But this room is earned, not given. You referred 3 people to get here. That already says something about you.
+  {/* Whether you just started or you're running a ₹10 crore operation — the 8 pillars apply at every stage. But this room is earned, not given. You referred 3 people to get here. That already says something about you.
+   */}
+   The framework is universal — it applies to every business, not a specific stage or industry. But this room is earned, not given. You referred 3 people to get here. That already says something about you.
 </motion.p>
 
       <div className="grid sm:grid-cols-2 gap-4">

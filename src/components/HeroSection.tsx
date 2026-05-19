@@ -117,9 +117,7 @@ const HeroSection = () => {
           className="mx-auto mb-8 max-w-[720px] px-2 text-center sm:mb-10"
         >
           <p className="text-[14px] leading-[1.7] text-[#a1a1aa] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">
-            In 3 days, I&apos;ll show you the exact bottleneck that&apos;s
-            capping your business at ₹30 Lakh, ₹1 Crore, or ₹5 Crore — and how
-            to fix it.
+            3 nights. 9 hours. The clearest diagnosis your business has ever had — and the exact levers to fix it, in the right order.
           </p>
 
           {/* <p className="mt-4 text-[14px] font-semibold leading-[1.7] text-[#ff6a1a] sm:text-[16px] sm:leading-[1.8] md:text-[18px]">

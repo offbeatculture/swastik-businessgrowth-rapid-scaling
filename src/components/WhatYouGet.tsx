@@ -4,7 +4,7 @@ const benefits = [
   {
     num: "01",
     title: "A One-Line Diagnosis",
-    desc: "Every pillar scored. You’ll know which 1–2 to attack first and why.",
+    desc: "What business you're actually in, and the structural reason customers cannot substitute you — written, defensible, in your own words.",
   },
   {
     num: "02",
@@ -14,17 +14,17 @@ const benefits = [
   {
     num: "03",
     title: "A Rewritten Marketing Message",
-    desc: "Positioning, story, and distribution — aligned. Tested against the room. Ready to put in front of strangers the next morning",
+    desc: "Positioning, story, and distribution — aligned. Tested against the room. Ready to put in front of strangers the next morning.",
   },
   {
     num: "04",
     title: "A Rebuilt Offer",
-    desc: 'Re-engineered until saying "no" feels stupid. New price defended out loud. The "sales problem" exposed for what it actually was.',
+    desc: 'Re-engineered until saying no feels stupid. New price defended out loud. The "sales problem" exposed for what it actually was.',
   },
   {
     num: "05",
     title: "Your Money Math",
-    desc: "Profit allocation system, the numbers to track every week, and a habit that makes profit unavoidable instead of optional.",
+    desc: "Profit allocation system, the numbers to track every week, and a habit that makes profit unavoidable instead of optionalProfit allocation system, the numbers to track every week, and a habit that makes profit unavoidable instead of optional.",
   },
   {
     num: "06",
