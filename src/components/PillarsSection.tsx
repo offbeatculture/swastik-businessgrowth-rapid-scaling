@@ -80,41 +80,60 @@ const PillarsSection = () => {
         </motion.div>
 
         {/* Cards */}
-        <div className="mx-auto grid max-w-[980px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {cards.map((card, i) => (
-            <motion.div
-              key={card.num}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: i * 0.04 }}
-              className={`relative min-h-[190px] rounded-[6px] border bg-[#17181f] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] ${
-                card.num === "06"
-                  ? "border-[#ff5a1f]/70"
-                  : "border-[#333641]"
-              }`}
-            >
-              <div className="mb-5 flex items-center justify-between">
-                <p className="text-[8px] font-black uppercase tracking-[0.28em] text-[#ff5a1f]">
-                  {card.cat}
-                </p>
-
-                <span className="text-[9px] font-semibold text-[#656b78]">
-                  {card.num}
-                </span>
-              </div>
-
-              <h3 className="mb-3 text-[16px] font-extrabold leading-tight text-white">
-                {card.title}
-              </h3>
-
-              <p className="text-[12px] leading-[1.6] text-[#b7bdca]">
-                {card.desc}
-              </p>
-            </motion.div>
-          ))}
+       <div className="mx-auto max-w-[980px] space-y-4">
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {cards.slice(0, 6).map((card, i) => (
+      <motion.div
+        key={card.num}
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.45, delay: i * 0.04 }}
+        className="relative min-h-[190px] rounded-[6px] border border-[#333641] bg-[#17181f] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
+      >
+        <div className="mb-5 flex items-center justify-between">
+          <p className="text-[8px] font-black uppercase tracking-[0.28em] text-[#ff5a1f]">
+            {card.cat}
+          </p>
+          <span className="text-[9px] font-semibold text-[#656b78]">
+            {card.num}
+          </span>
         </div>
-      </div>
+        <h3 className="mb-3 text-[16px] font-extrabold leading-tight text-white">
+          {card.title}
+        </h3>
+        <p className="text-[12px] leading-[1.6] text-[#b7bdca]">{card.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+
+  <div className="flex flex-col gap-4 lg:flex-row lg:justify-center">
+    {cards.slice(6).map((card, i) => (
+      <motion.div
+        key={card.num}
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.45, delay: i * 0.04 }}
+        className="relative min-h-[190px] w-full rounded-[6px] border border-[#333641] bg-[#17181f] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] lg:max-w-[calc(33.333%-8px)]"
+      >
+        <div className="mb-5 flex items-center justify-between">
+          <p className="text-[8px] font-black uppercase tracking-[0.28em] text-[#ff5a1f]">
+            {card.cat}
+          </p>
+          <span className="text-[9px] font-semibold text-[#656b78]">
+            {card.num}
+          </span>
+        </div>
+        <h3 className="mb-3 text-[16px] font-extrabold leading-tight text-white">
+          {card.title}
+        </h3>
+        <p className="text-[12px] leading-[1.6] text-[#b7bdca]">{card.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</div>
+</div>
     </section>
   );
 };
